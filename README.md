@@ -17,3 +17,46 @@ The goal of this project was to develop a server-to-server architecture using th
 - Frontend: HTML, CSS, and vanilla JavaScript
 - API: Gemini Live API 
 - Models: gemini-2.5-flash-preview-native-audio-dialog for the final submission, with gemini-2.0-flash-live-001 or gemini-live-2.5-flash-preview recommended for development and testing to avoid rate limits.
+
+## Setup Instructions
+
+### 1. Prerequisites
+* Node.js (LTS version recommended)
+* A Gemini API key from [aistudio.google.com](https://aistudio.google.com).
+
+### 2. Getting Started
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/avinash1Tiwari/RatanIndia-Assessment.git
+    cd ratanIndia/backend
+    ```
+2.  **Install dependencies:**
+    ```bash
+    npm install express ws dotenv
+    ```
+3.  **Configure API Key:**
+    * Create a `.env` file in the `backend` directory.
+    * Add your Gemini API key to the file[cite: 24].
+    * Specify the Gemini model to use[cite: 24].
+    ```
+    # .env file in backend/
+    GOOGLE_API_KEY="YOUR_API_KEY_HERE"
+    GEMINI_MODEL="gemini-2.0-flash"
+    PORT=3000(your local port)
+    ```
+    > **Note:** For development, you may want to temporarily switch the `GEMINI_MODEL` to `gemini-2.0-flash-live-001` or `gemini-live-2.5-flash-preview` to avoid hitting rate limits on the free tier.
+
+4.  **Run the application:**
+    ```bash
+    node server.js
+    ```
+    The server will start, and you can access the frontend by navigating to `http://localhost:3000` in your web browser.
+
+---
+
+# Demonstration Video
+- vedio link :  https://drive.google.com/file/d/11dRp6OGZk1WHbOd0Vv-IpzOV6jveGctR/view?usp=sharing
+
+# Source Code
+The complete source code for this implementation is available in this GitHub repository.
+
